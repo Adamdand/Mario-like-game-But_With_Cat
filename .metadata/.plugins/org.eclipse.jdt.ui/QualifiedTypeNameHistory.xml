@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.awt.Dimension"/>
+    <fullyQualifiedTypeName name="java.awt.image.BufferStrategy"/>
+    <fullyQualifiedTypeName name="com.biggfoot.objects.Test"/>
+    <fullyQualifiedTypeName name="com.biggfoot.objects.Block"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="com.biggfoot.objects.Player"/>
+    <fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.biggfoot.framework.KeyInput"/>
+    <fullyQualifiedTypeName name="java.awt.Graphics2D"/>
+    <fullyQualifiedTypeName name="com.biggfoot.window.BufferedImageLoader"/>
+    <fullyQualifiedTypeName name="com.biggfoot.window.Game"/>
+    <fullyQualifiedTypeName name="com.biggfoot.framework.Texture"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+    <fullyQualifiedTypeName name="com.biggfoot.window.Animation"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Ellipse2D"/>
+    <fullyQualifiedTypeName name="com.biggfoot.framework.GameObject"/>
+    <fullyQualifiedTypeName name="com.biggfoot.framework.ObjectId"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.awt.Graphics"/>
+    <fullyQualifiedTypeName name="java.awt.Rectangle"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="com.biggfoot.objects.Flag"/>
+    <fullyQualifiedTypeName name="com.biggfoot.window.Camera"/>
+    <fullyQualifiedTypeName name="com.biggfoot.objects.EvilHands"/>
+    <fullyQualifiedTypeName name="jdk.javadoc.internal.doclets.toolkit.util.DocFinder.Input"/>
+    <fullyQualifiedTypeName name="jdk.internal.util.xml.impl.Input"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseListener"/>
+    <fullyQualifiedTypeName name="com.sun.jdi.event.Event"/>
+    <fullyQualifiedTypeName name="javax.swing.JFrame"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseMotionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseAdapter"/>
+    <fullyQualifiedTypeName name="com.biggfoot.objects.Bullet"/>
+    <fullyQualifiedTypeName name="com.biggfoot.framework.MouseInput"/>
+    <fullyQualifiedTypeName name="java.awt.event.MouseEvent"/>
+    <fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
+    <fullyQualifiedTypeName name="com.biggfoot.window.Handler"/>
+</qualifiedTypeNameHistroy>
