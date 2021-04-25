@@ -14,6 +14,7 @@ import com.biggfoot.framework.GameObject;
 import com.biggfoot.framework.KeyInput;
 import com.biggfoot.framework.MouseInput;
 import com.biggfoot.framework.ObjectId;
+import com.biggfoot.framework.Sounds;
 import com.biggfoot.framework.Texture;
 import com.biggfoot.objects.Block;
 import com.biggfoot.objects.Flag;
@@ -22,6 +23,8 @@ import com.biggfoot.objects.Player;
 public class Game extends Canvas implements Runnable{
 	
 	private static final long serialVersionUID = 8338311474994350626L;
+	
+	Sounds mySound = new Sounds();
 	
 	private boolean running = false;
 	
@@ -84,6 +87,7 @@ public class Game extends Canvas implements Runnable{
 		thread.start();
 		
 		
+		
 	}
 	
 
@@ -91,6 +95,8 @@ public class Game extends Canvas implements Runnable{
 		
 		init();
 		this.requestFocus();
+		
+		//mySound.playSound("backGroundSound.wav");
 		
 		long lastTime = System.nanoTime();
 		double amountOfTicks = 60.0;			//game speed
@@ -101,6 +107,7 @@ public class Game extends Canvas implements Runnable{
 		int frames = 0;
 		
 		while(running) {
+			
 			long now = System.nanoTime();
 			delta += (now - lastTime) / ns;
 			lastTime = now;

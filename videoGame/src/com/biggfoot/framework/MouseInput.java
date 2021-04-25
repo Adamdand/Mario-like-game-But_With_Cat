@@ -10,6 +10,7 @@ import com.biggfoot.window.Handler;
 
 public class MouseInput extends MouseAdapter {
 
+	Sounds mySound = new Sounds();
 	private Handler handler;
 	// GameObject tempPlayer = null; //need to get location of Object so we know
 	// where to spawn object
@@ -31,8 +32,9 @@ public class MouseInput extends MouseAdapter {
 				if (tempPlayer.getId() == ObjectId.Player) {
 					if (tempPlayer != null) {
 						handler.addObject(new Bullet(tempPlayer.getX() + 0, tempPlayer.getY() + 10, ObjectId.Bullet,
-								tempPlayer.getFacing() * 10));
+						tempPlayer.getFacing() * 10));
 						tempPlayer.setAttacking(true);
+						mySound.playSound("attackSound.wav");
 					}
 				}
 			}
