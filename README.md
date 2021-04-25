@@ -1,7 +1,7 @@
 # Mario-like-game-But_With_Cat
 ## a game like Mario, but with Schrodinger's cat. still in progress
 
-![alt text](http://https://github.com/Adamdand/Mario-like-game-But_With_Cat/tree/main/to/gamePlay.JPG)
+![alt text](http://https://github.com/Adamdand/Mario-like-game-But_With_Cat/tree/main/gamePlay.JPG)
 
 # install Directions:
 ## 1.) git pull
