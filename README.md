@@ -15,3 +15,5 @@
 ## move with arrow keys, OR 'A','W', and 'D' (recomended)
 ## mouse button to shoot hair balls at enemies
 
+# Current Bugs:
+# Found a bug, where system crahses if too many keys/commands are pressed simultaneously
