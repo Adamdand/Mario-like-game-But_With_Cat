@@ -11,6 +11,7 @@ public abstract class GameObject {
 	protected float velX = 0, velY = 0;
 	protected boolean falling = true;
 	protected boolean jumping = false;
+	protected boolean attacking = false;
 	protected int facing = 1;
 	
 	public GameObject(float x, float y, ObjectId id) {
@@ -69,6 +70,13 @@ public abstract class GameObject {
 	
 	public int getFacing() {
 		return facing;
+	}
+	
+	public void setAttacking(boolean attacking) {
+		this.attacking = attacking;
+	}
+	public boolean isAttacking() {
+		return attacking;
 	}
 
 	public ObjectId getId() {

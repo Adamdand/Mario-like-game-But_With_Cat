@@ -16,9 +16,11 @@ public class Texture {
 	public BufferedImage[] block = new BufferedImage[2]; //grass and dirt for now
 	public BufferedImage[] player = new BufferedImage[16]; //for player walking images
 	public BufferedImage[] player_jump = new BufferedImage[10]; //for player jumping
-	public BufferedImage[] flag = new BufferedImage[1]; //for player jumping
+	public BufferedImage[] flag = new BufferedImage[1]; //for end of level objective
 	public BufferedImage[] hairball = new BufferedImage[10]; //for player projectile
 	public BufferedImage[] hand_grab = new BufferedImage[5]; //for player projectile
+	public BufferedImage[] Cathairball = new BufferedImage[2]; //for player hairball
+
 	
 	public Texture() {
 		
@@ -94,13 +96,17 @@ public class Texture {
 		hairball[3] = ps.grabImage(4,5,32,32);
 		hairball[4] = ps.grabImage(5,5,32,32);
 		
-		
 		//HairBall Left
 		hairball[5] = ps.grabImage(1,6,32,32);
 		hairball[6] = ps.grabImage(2,6,32,32);
 		hairball[7] = ps.grabImage(3,6,32,32);
 		hairball[8] = ps.grabImage(4,6,32,32);
 		hairball[9] = ps.grabImage(5,6,32,32);
+
+		//CatHairBall Right
+		Cathairball[0] = ps.grabImage(1,7,32,32);
+		//CatHairBall Left
+		Cathairball[1] = ps.grabImage(2,7,32,32);
 
 		
 

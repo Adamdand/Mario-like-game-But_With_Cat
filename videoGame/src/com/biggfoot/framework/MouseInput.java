@@ -32,10 +32,14 @@ public class MouseInput extends MouseAdapter {
 					if (tempPlayer != null) {
 						handler.addObject(new Bullet(tempPlayer.getX() + 0, tempPlayer.getY() + 10, ObjectId.Bullet,
 								tempPlayer.getFacing() * 10));
+						tempPlayer.setAttacking(true);
 					}
 				}
 			}
 		}
+		
+		
+		
 //		if (SwingUtilities.isRightMouseButton(e)) {
 //
 //			for (int i = 0; i < handler.object.size(); i++) {
@@ -49,6 +53,12 @@ public class MouseInput extends MouseAdapter {
 //				}
 //			}
 //		}
+	}
+	public void mouseReleased(MouseEvent e) {
+		for (int i = 0; i < handler.object.size(); i++) {
+		GameObject tempPlayer = handler.object.get(i);
+		tempPlayer.setAttacking(false);
+		}
 	}
 
 }

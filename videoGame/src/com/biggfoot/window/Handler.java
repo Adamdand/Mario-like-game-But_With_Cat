@@ -22,13 +22,15 @@ public class Handler {
 	
 	private BufferedImage level1 = null;
 	private BufferedImage level2 = null;
+	private BufferedImage level3 = null;
 	
 	public Handler(Camera cam) {
 		this.cam=cam;
 		
 		BufferedImageLoader loader = new BufferedImageLoader();
-		level1 = loader.loadImage("/level.png"); //loading the level2
+		level1 = loader.loadImage("/level.png"); //loading the level1
 		level2 = loader.loadImage("/level2.png"); //loading the level2
+		level3 = loader.loadImage("/level3.png"); //loading the level3
 	}
 	
 	public void tick() {
@@ -85,6 +87,9 @@ public class Handler {
 			case 2:
 				LoadImageLevel(level2);
 				break;
+			case 3:
+				LoadImageLevel(level3);
+				break;
 		}
 	}
 	
@@ -97,9 +102,9 @@ public class Handler {
 			case 1:
 				LoadImageLevel(level2);
 				break;
-//			case 2:
-//				LoadImageLevel(level3);
-//				break;
+			case 2:
+				LoadImageLevel(level3);
+				break;
 		}
 		Game.LEVEL++;	//increase level after beating each
 	}

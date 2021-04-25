@@ -30,6 +30,7 @@ public class Player extends GameObject{
 	
 	private Animation playerWalk, playerWalkLeft;	//WALKING
 	private Animation playerIdleRight, playerIdleLeft;	//IDLE
+	private Animation playerHairballRight,playerHairballLeft;
 	//private Animation playerJumpRight, playerJumpLeft; //Jumping
 	
 	
@@ -43,7 +44,8 @@ public class Player extends GameObject{
 		
 		playerIdleRight = new Animation(5, tex.player[8], tex.player[9], tex.player[10], tex.player[11], tex.player[12], tex.player[13], tex.player[14], tex.player[15] );
 		playerIdleLeft = new Animation(5, tex.player[0], tex.player[1], tex.player[2], tex.player[3], tex.player[4], tex.player[5], tex.player[6], tex.player[7]);
-		
+		playerHairballRight = new Animation(5, tex.Cathairball[0]);
+		playerHairballLeft = new Animation(5, tex.Cathairball[1]);
 		//playerJumpRight = new Animation(10, tex.player_jump[0], tex.player_jump[1], tex.player_jump[2], tex.player_jump[3], tex.player_jump[4], tex.player_jump[5], tex.player_jump[6], tex.player_jump[7]);
 		//playerJumpLeft = new Animation(10, tex.player_jump[9], tex.player_jump[10], tex.player_jump[11], tex.player_jump[12], tex.player_jump[13], tex.player_jump[14], tex.player_jump[15]);
 	}
@@ -73,6 +75,9 @@ public class Player extends GameObject{
 		playerIdleRight.runAnimation(); //IDLE
 		playerIdleLeft.runAnimation(); //IDLE
 		
+		playerHairballLeft.runAnimation(); //attacking
+		playerHairballRight.runAnimation(); //attacking
+		
 		//playerJumpRight.runAnimation(); //Jumping
 		//playerJumpLeft.runAnimation(); //Jumping
 
@@ -88,6 +93,7 @@ public class Player extends GameObject{
 					if(getBoundsTop().intersects(tempObject.getBounds())) {	
 						y = tempObject.getY() + 32;	//top of collition needs to be ~ half the dimensions of the block
 						velY = 0;
+						attacking = false;
 					}
 				
 				//BOTTOM
@@ -113,11 +119,13 @@ public class Player extends GameObject{
 				}else if(tempObject.getId() == ObjectId.Flag) {								//****when flag get touched, next level
 					//switch levels
 					if(getBounds().intersects(tempObject.getBounds())) {
+					attacking = false;
 					handler.switchLevel();
 					}
 				}else if (tempObject.getId() == ObjectId.EvilHands) {
 					//reset level
 					if(getBounds().intersects(tempObject.getBounds())) {
+					attacking = false;
 					handler.restartLevel();
 					}
 				}
@@ -130,6 +138,15 @@ public class Player extends GameObject{
 
 	public void render(Graphics g) {	//render out a blue square with dimension above
 		g.setColor(Color.blue);
+		
+		//Attacking
+		if(attacking) {
+			if(facing == 1)
+				g.drawImage(tex.Cathairball[0],  (int)x,  (int)y,  50,  50,  null); //jump right
+			else if(facing == -1)
+				g.drawImage(tex.Cathairball[1],  (int)x,  (int)y,  50,  50,  null);	//jump left
+			
+		}else {
 		
 		//JUMPING
 		if(jumping) {
@@ -152,6 +169,7 @@ public class Player extends GameObject{
 				else if( facing == -1)
 					playerIdleLeft.drawAnimation(g,  (int)x,  (int)y, 50, 50);	//walking left	//standing left
 			}
+		}
 		}
 		
 		// g.fillRect((int)x, (int)y, (int)width, (int)height);  // this was for when the player was a rectange
