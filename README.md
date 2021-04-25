@@ -12,6 +12,6 @@
 ## touch the grave stones to complete the level
 ## dont get hit by enemies (zombies, or hands)
 ## jump with spacebar
-## move with arrow keys
+## move with arrow keys, OR 'A','W', and 'D' (recomended)
 ## mouse button to shoot hair balls at enemies
 
