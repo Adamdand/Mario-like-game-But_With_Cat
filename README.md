@@ -8,7 +8,7 @@
 ## 2.) create a new Javaproject in eclypse, using folder "videogame" within "mario-like-game-but-with-cat" folder.
 ## 3.) run the game, by entering "Game.java" file within eclypse
 
-#Game Play Instructions:
+# Game Play Instructions:
 ## touch the grave stones to complete the level
 ## dont get hit by enemies (zombies, or hands)
 ## jump with spavebar
