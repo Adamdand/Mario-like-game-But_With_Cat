@@ -5,7 +5,7 @@
 
 # install Directions:
 ## 1.) git pull
-## 2.) create a new Javaproject in eclypse, using folder "videogame" within "mario-like-game-but-with-cat" folder.
+## 2.) create a new Javaproject in Eclipse, using folder "videogame" within "mario-like-game-but-with-cat" folder.
 ## 3.) run the game, by entering "Game.java" file within eclypse
 
 # Game Play Instructions:
