@@ -11,7 +11,7 @@
 # Game Play Instructions:
 ## touch the grave stones to complete the level
 ## dont get hit by enemies (zombies, or hands)
-## jump with spavebar
+## jump with spacebar
 ## move with arrow keys
 ## mouse button to shoot hair balls at enemies
 
